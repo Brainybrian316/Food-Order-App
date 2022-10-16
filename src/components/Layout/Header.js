@@ -1,5 +1,6 @@
 import mealsImage from '../../assets/meals.jpg';
 import classes from './Header.module.css';
+import HeaderCartButton from './HeaderCartButton';
 
 const Header = (props) => {
 	return (
@@ -7,7 +8,7 @@ const Header = (props) => {
 		<>
 			<header className={classes.header}>
 				<h1>ReactMeals</h1>
-				<button>Cart</button>
+				<HeaderCartButton />
 			</header>
 			{/* we cannot use . notation since there is a - for the two words so we have to write out like this */}
 			<div className={classes['main-image']}>
