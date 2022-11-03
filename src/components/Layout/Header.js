@@ -8,7 +8,7 @@ const Header = (props) => {
 		<>
 			<header className={classes.header}>
 				<h1>ReactMeals</h1>
-				<HeaderCartButton />
+				<HeaderCartButton onHandleClick={props.onShowCart} />
 			</header>
 			{/* we cannot use . notation since there is a - for the two words so we have to write out like this */}
 			<div className={classes['main-image']}>
